@@ -736,7 +736,7 @@ public class BanHangJPanel extends javax.swing.JPanel implements ChooseKH, Threa
     private void gennerateQRcode(String barcode) {
         try {
             String data = barcode;
-            String path1 = "E:\\merge\\QuanLyDoChoi\\QRHoaDon\\" + barcode + ".png";
+            String path1 = "src\\main\\resources\\QRHoaDon\\" + barcode + ".png";
             QRCodeWriter qc = new QRCodeWriter();
             BitMatrix bm = qc.encode(data, BarcodeFormat.QR_CODE, 211, 157);
             Path path = FileSystems.getDefault().getPath(path1);

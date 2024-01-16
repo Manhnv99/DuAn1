@@ -502,7 +502,6 @@ public class HoaDonJPanel extends javax.swing.JPanel {
 //            JOptionPane.showMessageDialog(this, "Bạn Chưa Chọn Hóa Đơn Nào!");
 //        }
 //    }
-
     //Hoàn Sản Phầm
 //    private void HoanSanPham() {
 //        int selectedHD = LichSuHoaDonTable.getSelectedRow();
@@ -607,7 +606,6 @@ public class HoaDonJPanel extends javax.swing.JPanel {
 //        }
 //
 //    }
-
     //fill  cbb TTHD
     private void fillCbbTTHD() {
         cbbTTHD.removeAllItems();
@@ -1541,7 +1539,7 @@ public class HoaDonJPanel extends javax.swing.JPanel {
 
     private void SanPhamDaMuaTableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SanPhamDaMuaTableMouseClicked
         // TODO add your handling code here:
-        
+
     }//GEN-LAST:event_SanPhamDaMuaTableMouseClicked
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -1550,7 +1548,7 @@ public class HoaDonJPanel extends javax.swing.JPanel {
         FileOutputStream excelFOU = null;
         BufferedOutputStream excelBOU = null;
         XSSFWorkbook excelJTableExporter = null;
-        JFileChooser excelFileChooser = new JFileChooser("E:\\merge\\QuanLyDoChoi\\excel\\");
+        JFileChooser excelFileChooser = new JFileChooser("src\\main\\resources\\excel\\");
         excelFileChooser.setDialogTitle("Save AS");
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("EXCEL FILES", "xls", "xlsx", "xlsm");
         excelFileChooser.setFileFilter(fnef);

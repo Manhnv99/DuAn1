@@ -59,13 +59,13 @@ public class genneratePDF {
     }
 
     public void genInvoice(List<GioHang> list,HoaDon hd,KhachHang kh,String maHD) throws FileNotFoundException, MalformedURLException {
-        String path = "E:\\merge\\QuanLyDoChoi\\InvoicePDF\\"+maHD+".pdf";
+        String path = "src\\main\\resources\\InvoicePDF\\"+maHD+".pdf";
         PdfWriter pdfWriter = new PdfWriter(path);
         PdfDocument pdfDocument = new PdfDocument(pdfWriter);
         pdfDocument.setDefaultPageSize(PageSize.A4);
         Document document = new Document(pdfDocument);
 
-        String imagePath = "E:\\merge\\QuanLyDoChoi\\src\\main\\resources\\icon\\rsz_logo-do-choi-babyking.png";
+        String imagePath = "src\\main\\resources\\icon\\rsz_logo-do-choi-babyking.png";
         ImageData imageData = ImageDataFactory.create(imagePath);
         Image image = new Image(imageData);
         float x = pdfDocument.getDefaultPageSize().getWidth() / 2;

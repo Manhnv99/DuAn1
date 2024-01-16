@@ -104,11 +104,11 @@ public class ThongTinSanPham extends javax.swing.JDialog {
         String barcodeSub="";
         if(whatKind==1){
             barcodeSub = barcode.substring(0, barcode.indexOf(" "));
-            File file = new File("E:\\merge\\QuanLyDoChoi\\barcode\\" + barcodeSub + ".png");
+            File file = new File("src\\main\\resources\\barcode\\" + barcodeSub + ".png");
             jlbBarcode.setIcon(new ImageIcon(file.getAbsolutePath()));
         }else{
             barcodeSub=barcode;
-            File file = new File("E:\\merge\\QuanLyDoChoi\\barcode\\" + barcodeSub + ".png");
+            File file = new File("src\\main\\resources\\barcode\\" + barcodeSub + ".png");
             jlbBarcode.setIcon(new ImageIcon(file.getAbsolutePath()));
         }
         this.barcode = barcodeSub;
@@ -116,7 +116,7 @@ public class ThongTinSanPham extends javax.swing.JDialog {
 
     private String readBarcode(String barcode) {
         try {
-            String Path = "E:\\merge\\QuanLyDoChoi\\barcode\\" + barcode + ".png";
+            String Path = "src\\main\\resources\\barcode\\" + barcode + ".png";
             BufferedImage bf = ImageIO.read(new FileInputStream(Path));
             BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(new BufferedImageLuminanceSource(bf)));
             Result result = new MultiFormatReader().decode(bitmap);

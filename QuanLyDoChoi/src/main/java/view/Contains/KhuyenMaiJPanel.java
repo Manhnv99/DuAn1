@@ -532,7 +532,7 @@ public class KhuyenMaiJPanel extends javax.swing.JPanel {
     //Mã Barcode
     private void generateBarcode(String data) {
         try {
-            String path = "E:\\Group7-DuAn1\\QuanLyDoChoi\\QRVoucher\\" + data + ".png";
+            String path = "src\\main\\resources\\QRVoucher\\" + data + ".png";
             Code128Writer writer = new Code128Writer();
             BitMatrix matrix = writer.encode(data, BarcodeFormat.CODE_128, 500, 200);
             MatrixToImageWriter.writeToPath(matrix, "png", Paths.get(path));

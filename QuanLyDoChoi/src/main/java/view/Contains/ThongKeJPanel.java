@@ -267,7 +267,7 @@ public class ThongKeJPanel extends javax.swing.JPanel {
         FileOutputStream excelFOU = null;
         BufferedOutputStream excelBOU = null;
         XSSFWorkbook excelJTableExporter = null;
-        JFileChooser excelFileChooser = new JFileChooser("E:\\merge\\QuanLyDoChoi\\excel\\");
+        JFileChooser excelFileChooser = new JFileChooser("src\\main\\resources\\excel\\");
         excelFileChooser.setDialogTitle("Save AS");
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("EXCEL FILES", "xls", "xlsx", "xlsm");
         excelFileChooser.setFileFilter(fnef);
@@ -333,7 +333,7 @@ public class ThongKeJPanel extends javax.swing.JPanel {
         FileOutputStream excelFOU = null;
         BufferedOutputStream excelBOU = null;
         XSSFWorkbook excelJTableExporter = null;
-        JFileChooser excelFileChooser = new JFileChooser("E:\\Group7-DuAn1\\QuanLyDoChoi\\excel\\");
+        JFileChooser excelFileChooser = new JFileChooser("src\\main\\resources\\excel\\");
         excelFileChooser.setDialogTitle("Save AS");
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("EXCEL FILES", "xls", "xlsx", "xlsm");
         excelFileChooser.setFileFilter(fnef);

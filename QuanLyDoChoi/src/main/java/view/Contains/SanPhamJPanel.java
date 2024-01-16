@@ -367,7 +367,7 @@ public class SanPhamJPanel extends javax.swing.JPanel implements fillTextItf {
     private void gennerateBarcode(String barcode) {
         try {
             String data = barcode;
-            String path1 = "E:\\merge\\QuanLyDoChoi\\barcode\\" + barcode + ".png";
+            String path1 = "src\\main\\resources\\barcode\\" + barcode + ".png";
             QRCodeWriter qc = new QRCodeWriter();
             BitMatrix bm = qc.encode(data, BarcodeFormat.QR_CODE, 211, 157);
             Path path = FileSystems.getDefault().getPath(path1);
@@ -425,7 +425,6 @@ public class SanPhamJPanel extends javax.swing.JPanel implements fillTextItf {
                                             count++;
                                             JOptionPane.showMessageDialog(this, "Ghi Chú Không Được Trống!");
                                         } else {
-//                                    String barcodeSub=barcode.substring(0, barcode.indexOf(" "));
                                             this.gennerateBarcode(barcode);
                                         }
                                     }
@@ -2347,7 +2346,7 @@ public class SanPhamJPanel extends javax.swing.JPanel implements fillTextItf {
         FileOutputStream excelFOU = null;
         BufferedOutputStream excelBOU = null;
         XSSFWorkbook excelJTableExporter = null;
-        JFileChooser excelFileChooser = new JFileChooser("E:\\merge\\QuanLyDoChoi\\excel\\");
+        JFileChooser excelFileChooser = new JFileChooser("src\\main\\resources\\excel\\");
         excelFileChooser.setDialogTitle("Save AS");
         FileNameExtensionFilter fnef = new FileNameExtensionFilter("EXCEL FILES", "xls", "xlsx", "xlsm");
         excelFileChooser.setFileFilter(fnef);
