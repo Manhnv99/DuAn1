@@ -8,14 +8,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.time.LocalDate;
 import java.util.Calendar;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
 import jdbc.DBConnect;
-import serviceImpl.HoaDonServiceImpl;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import serviceImpl.VoucherServiceImpl;
 
 /**
  *
@@ -28,6 +23,7 @@ public class MyThread extends Thread {
         while (true) {
 //            cleanDB();
             this.setTrangThaiVoucher(this.getToDay());
+            System.out.println("hehehe");
 //            this.setTrangThaiVoucher1(this.getToDay());
             try {
                 Thread.sleep(1000);

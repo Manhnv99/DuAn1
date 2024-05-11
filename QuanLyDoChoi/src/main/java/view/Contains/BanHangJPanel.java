@@ -46,7 +46,6 @@ import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 import javax.swing.table.DefaultTableModel;
-import model.GioHang;
 import modelview.modelChiTietSanPham;
 import model.ChiTietSanPham;
 import model.GioHang;

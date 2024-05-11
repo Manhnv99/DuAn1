@@ -281,7 +281,6 @@ public class NhanVienJPanel extends javax.swing.JPanel implements ThreadFactory,
                                     count++;
                                     JOptionPane.showMessageDialog(this, "CCCD Này Đã Tồn Tại!");
                                 } else {
-                                    this.gennerateQR(cccd);
                                     if (diaChi.trim().isEmpty()) {
                                         count++;
                                         JOptionPane.showMessageDialog(this, "Địa Chỉ Không Được Trống!");
@@ -372,7 +371,6 @@ public class NhanVienJPanel extends javax.swing.JPanel implements ThreadFactory,
                                 count++;
                                 JOptionPane.showMessageDialog(this, "CCCD phải là 12 số");
                             } else {
-                                this.gennerateQR(cccd);
                                 if (diaChi.trim().isEmpty()) {
                                     count++;
                                     JOptionPane.showMessageDialog(this, "Địa Chỉ Không Được Trống!");
@@ -512,13 +510,13 @@ public class NhanVienJPanel extends javax.swing.JPanel implements ThreadFactory,
         showData(list);
     }
 
-    private void gennerateQR(String cccd) throws WriterException, IOException {
-        String path1 = "E:\\Group7-DuAn1\\QuanLyDoChoi\\QRCCCD\\" + cccd + ".png";
-        QRCodeWriter qc = new QRCodeWriter();
-        BitMatrix bm = qc.encode(cccd, BarcodeFormat.QR_CODE, 300, 300);
-        Path path = FileSystems.getDefault().getPath(path1);
-        MatrixToImageWriter.writeToPath(bm, "PNG", path);
-    }
+//    private void gennerateQR(String cccd) throws WriterException, IOException {
+//        String path1 = "E:\\Group7-DuAn1\\QuanLyDoChoi\\QRCCCD\\" + cccd + ".png";
+//        QRCodeWriter qc = new QRCodeWriter();
+//        BitMatrix bm = qc.encode(cccd, BarcodeFormat.QR_CODE, 300, 300);
+//        Path path = FileSystems.getDefault().getPath(path1);
+//        MatrixToImageWriter.writeToPath(bm, "PNG", path);
+//    }
 
     private void xoaNhanVien() {
         int selected = NhanVienTable.getSelectedRow();

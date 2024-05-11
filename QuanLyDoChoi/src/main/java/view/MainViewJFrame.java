@@ -6,26 +6,13 @@ package view;
 
 import category.categoryBean;
 import com.github.sarxos.webcam.Webcam;
-import com.github.sarxos.webcam.WebcamPanel;
-import com.github.sarxos.webcam.WebcamResolution;
 import controller.MoveScreenController;
-import java.awt.Dimension;
-import java.awt.Image;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.imageio.ImageIO;
-import javax.swing.ImageIcon;
-import javax.swing.JOptionPane;
 import utils.Auth;
-import view.Contains.KhachHangJPanel;
-import view.Contains.NhanVienJPanel;
 
 /**
  *
@@ -36,15 +23,10 @@ public class MainViewJFrame extends javax.swing.JFrame {
     /**
      * Creates new form MainViewJFrame
      */
-    Webcam wc;
 
     private void init() throws IOException {
         this.setSize(1500, 820);
         setLocationRelativeTo(null);
-//        File file = new File("E:\\Group7-DuAn1\\QuanLyDoChoi\\src\\main\\resources\\icon\\toy.png");
-//        Image image = ImageIO.read(file);
-//        ImageIcon icon = new ImageIcon(image);
-//        this.setIconImage(icon.getImage());
         this.setTitle("Quản Lý Đồ Chơi");
         
     }
